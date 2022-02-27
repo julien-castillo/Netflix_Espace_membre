@@ -88,13 +88,14 @@
 				}
 
 			} else if(isset($_GET['success'])) {
-
+				
 				echo'<div class="alert success">Vous êtes désormais inscrit. <a href="index.php">Connectez-vous</a>.</div>';
-
+				
 			} ?>
 
 			<form method="post" action="inscription.php">
 				<input type="email" name="email" placeholder="Votre adresse email" required />
+				<input type="pseudo" name="pseudo" placeholder="Votre pseudo" required />
 				<input type="password" name="password" placeholder="Mot de passe" required />
 				<input type="password" name="password_two" placeholder="Retapez votre mot de passe" required />
 				<button type="submit">S'inscrire</button>
